@@ -1,79 +1,49 @@
-# Explanation of Key Sections:
-## Data Preparation and Feature Engineering:
+# Sales Forecasting using Machine Learning
 
-1- Load the dataset.
-Create a sales difference column and generate supervised data.
-Split the data into training and testing sets.
+## 📌 Project Overview
 
-2- Scaling:
-Use Min-Max scaling to scale the features between -1 and 1.
+This project predicts future sales using Machine Learning techniques. Historical sales data is analyzed and a Linear Regression model is used to forecast future sales.
 
-3- Training and Predictions:
-Train a Linear Regression model.
-Make predictions and inverse transform the results to the original scale.
+## 🎯 Objective
 
-4- Evaluation:
-Calculate MSE, MAE, and R2 score to evaluate the model’s performance.
+The objective of this project is to build a Machine Learning model that can analyze historical sales patterns and predict future sales.
 
-5- Visualization:
-Plot the actual sales versus predicted sales for visual comparison.
+## 🛠️ Technologies Used
 
-# Sales Prediction with Linear Regression
-
-This project demonstrates how to use linear regression to predict monthly sales based on historical sales data. The project includes data preprocessing, feature engineering, model training, evaluation, and visualization.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-The goal of this project is to predict future sales using a linear regression model. We use historical sales data, preprocess it, create a supervised learning dataset, and train a linear regression model to make predictions. The project also includes evaluation metrics and visualizations to compare the predicted sales against the actual sales.
-
-## Prerequisites
-
-- Python 3.x
+- Python
 - Pandas
 - NumPy
 - Scikit-learn
 - Matplotlib
 
-You can install the required packages using the following command:
+## ⚙️ Project Workflow
 
-```bash
-pip install pandas numpy scikit-learn matplotlib
-```
+1. Load the sales dataset
+2. Perform data preprocessing
+3. Create features for the Machine Learning model
+4. Split the data into training and testing datasets
+5. Train the Linear Regression model
+6. Make sales predictions
+7. Evaluate the model performance
+8. Visualize actual vs predicted sales
 
-# The script will perform the following steps:
+## 🤖 Machine Learning Model
 
-* Load and preprocess the data
-* Create a supervised learning problem
-* Split the data into training and testing sets
-* Train a linear regression model
-* Evaluate the model using MSE, MAE, and R2 score
-* Plot the actual vs. predicted sales
+**Linear Regression**
 
-# Results
-## The output includes:
-Evaluation metrics:
-Mean Squared Error (MSE)
-Mean Absolute Error (MAE)
-R2 Score
+Linear Regression is used to identify patterns in historical sales data and predict future sales values.
 
-A plot comparing the actual sales and the predicted sales.
-The plot helps visualize the model's performance in predicting sales for the test period.
+## 📊 Model Evaluation
 
-# Contributing
-Contributions are welcome! If you have any suggestions or improvements, please create a pull request or open an issue.
+The model performance is evaluated using:
 
-# Fork the repository
-Create your feature branch (git checkout -b feature/fooBar)
-Commit your changes (git commit -m 'Add some fooBar')
-Push to the branch (git push origin feature/fooBar)
-Create a new Pull Request
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+
+## 📁 Project Structure
+
+```text
+Sales-Forecasting-Machine-Learning/
+│
+├── sales.py
+└── README.md
